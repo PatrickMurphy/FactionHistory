@@ -1,0 +1,14 @@
+name: Faction History
+main: com.patrickmurphoto.factionhistory
+version: 0.0.1
+website: http://www.patrickmurphwebdesign.com
+author: Patrick Murphy
+database: true
+description: >
+             Retrieves a history of the factions a player has been in.
+commands:
+  /fhistory:
+    description: Retrieves the faction history for the specified player.
+    usage: |
+           /fhistory [player]
+depend: [Factions]
