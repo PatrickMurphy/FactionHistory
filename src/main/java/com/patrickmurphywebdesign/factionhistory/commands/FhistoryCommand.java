@@ -1,5 +1,5 @@
 
-package com.patrickmurphoto.factionhistory.commands;
+package com.patrickmurphywebdesign.factionhistory.commands;
 
 import com.patrickmurphoto.factionhistory.PlayerHistory;
 import com.patrickmurphoto.factionhistory.FactionHistory;

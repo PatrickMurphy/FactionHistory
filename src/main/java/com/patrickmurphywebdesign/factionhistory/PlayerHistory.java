@@ -1,5 +1,5 @@
 
-package com.patrickmurphoto.factionhistory;
+package com.patrickmurphywebdesign.factionhistory;
 
 import com.avaje.ebean.validation.Length;
 import com.avaje.ebean.validation.NotEmpty;
