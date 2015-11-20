@@ -21,10 +21,16 @@ public class FhistoryCommand implements CommandExecutor {
         Player player = FactionHistory.getPlayer(sender, args, 0);
 
         if (player == null) {
+						Sender.sendMessage('Incorrect Sender');
             return true;
         }
-
-        List<PlayerHistory> histories = plugin.getDatabase().find(PlayerHistory.class).where().ieq("playerName", player.getName()).findList();
+			String name;
+			if(args.length < 1){
+				name = player.getName();
+			}else{
+				name = args[0];
+			}
+        List<PlayerHistory> histories = plugin.getDatabase().find(PlayerHistory.class).where().ieq("playerName", name).findList();
 
         if (histories.isEmpty()) {
 					// create init history
